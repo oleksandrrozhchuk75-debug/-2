@@ -1,0 +1,43 @@
+<!-- Сайт розроблено студентом Рожчук Олександр, група ФЕМП 4-14 -->
+<!-- ================= calculator.html ================= -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Калькулятор</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Калькулятор витрат</h1></header>
+<nav>
+<a href="index.html">Головна</a>
+<a href="about.html">Умови</a>
+<a href="calculator.html">Калькулятор</a>
+<a href="contacts.html">Контакти</a>
+</nav>
+<main>
+<select id="type">
+<option value="mdrive">McDrive</option>
+<option value="mall">Ресторан у ТЦ</option>
+<option value="standalone">Окремий ресторан</option>
+</select>
+<select id="city">
+<option value="1.5">Київ</option>
+<option value="1.3">Львів</option>
+<option value="1.2">Одеса</option>
+<option value="1.2">Дніпро</option>
+<option value="1.2">Харків</option>
+<option value="1.0">Запоріжжя</option>
+<option value="1.0">Вінниця</option>
+<option value="0.9">Полтава</option>
+<option value="0.9">Чернівці</option>
+<option value="0.8">Тернопіль</option>
+</select>
+<button onclick="calc()">Розрахувати</button>
+<div id="result"></div>
+<canvas id="chart" width="500" height="250"></canvas>
+</main>
+<footer>Рожчук Олександр 4-14</footer>
+<script src="js/calculator.js"></script>
+</body>
+</html>
